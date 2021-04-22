@@ -17,7 +17,7 @@
 		81E4221E26315D4400BE96F9 /* CheatKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheatKit.h; sourceTree = "<group>"; };
 		81E4221F26315D4400BE96F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81EBA85C2631799A00C1F4FF /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		81EBA86126317DFA00C1F4FF /* PlistParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistParser.m; sourceTree = "<group>"; };
+		81EBA86126317DFA00C1F4FF /* PlistParser.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = PlistParser.m; sourceTree = "<group>"; };
 		81EBA86526317E0D00C1F4FF /* PlistParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistParser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

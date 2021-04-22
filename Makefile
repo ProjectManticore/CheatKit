@@ -12,3 +12,7 @@ CheatKit_INSTALL_PATH = /Library/Frameworks
 CheatKit_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/framework.mk
+
+after-clean::
+	if [ -d "packages" ]; then rm -rf packages; fi
+
