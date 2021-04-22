@@ -6,7 +6,7 @@ include $(THEOS)/makefiles/common.mk
 FRAMEWORK_NAME = CheatKit
 CheatKitSource = CheatKit
 
-CheatKit_FILES = $(wildcard $(CheatKitSource)/*.swift $(CheatKitSource)/*/*.swift $(CheatKitSource)/*/*/*.swift)
+CheatKit_FILES = $(wildcard $(CheatKitSource)/*.m $(CheatKitSource)/*/*.m $(CheatKitSource)/*/*/*.m)
 CheatKit_PUBLIC_HEADERS = $(wildcard $(CheatKit)/*.h)
 CheatKit_INSTALL_PATH = /Library/Frameworks
 CheatKit_CFLAGS = -fobjc-arc
