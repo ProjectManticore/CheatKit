@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		814A37F026315E9900B4C73F /* FileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A37EF26315E9900B4C73F /* FileParser.swift */; };
 		81E4222026315D4400BE96F9 /* CheatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E4221E26315D4400BE96F9 /* CheatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		814A37EF26315E9900B4C73F /* FileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileParser.swift; sourceTree = "<group>"; };
 		81E4221B26315D4400BE96F9 /* CheatKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CheatKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E4221E26315D4400BE96F9 /* CheatKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheatKit.h; sourceTree = "<group>"; };
 		81E4221F26315D4400BE96F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				81E4221E26315D4400BE96F9 /* CheatKit.h */,
 				81E4221F26315D4400BE96F9 /* Info.plist */,
+				814A37EF26315E9900B4C73F /* FileParser.swift */,
 			);
 			path = CheatKit;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					81E4221A26315D4400BE96F9 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814A37F026315E9900B4C73F /* FileParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +262,7 @@
 		81E4222426315D4400BE96F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3LJ9H6BD56;
@@ -273,6 +279,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.manticore.CheatKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -280,6 +288,7 @@
 		81E4222526315D4400BE96F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3LJ9H6BD56;
@@ -296,6 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.manticore.CheatKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
