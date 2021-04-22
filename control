@@ -1,0 +1,9 @@
+Package: com.manticore.cheatkit
+Name: CheatKit
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Fundamental framework for CheatManager
+Maintainer: CheatManagerTeam
+Author: CheatManagerTeam
+Section: System
+Tag: role::developer

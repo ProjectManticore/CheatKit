@@ -16,6 +16,7 @@
 		81E4221B26315D4400BE96F9 /* CheatKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CheatKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E4221E26315D4400BE96F9 /* CheatKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheatKit.h; sourceTree = "<group>"; };
 		81E4221F26315D4400BE96F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81EBA85C2631799A00C1F4FF /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +33,7 @@
 		81E4221126315D4400BE96F9 = {
 			isa = PBXGroup;
 			children = (
+				81EBA85C2631799A00C1F4FF /* Makefile */,
 				81E4221D26315D4400BE96F9 /* CheatKit */,
 				81E4221C26315D4400BE96F9 /* Products */,
 			);
