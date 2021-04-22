@@ -1,18 +1,10 @@
-TARGET := iphone:clang:latest:14.3
-ARCHS = arm64 arm64e
+TARGET = iphone:clang:latest:14.3
+ARCHS = arm64
 
 include $(THEOS)/makefiles/common.mk
 
-FRAMEWORK_NAME = CheatKit
-CheatKitSource = CheatKit
+XCODEPROJ_NAME = CheatKit
 
-CheatKit_FILES = $(wildcard $(CheatKitSource)/*.m $(CheatKitSource)/*/*.m $(CheatKitSource)/*/*/*.m)
-CheatKit_PUBLIC_HEADERS = $(wildcard $(CheatKit)/*.h)
-CheatKit_INSTALL_PATH = /Library/Frameworks
-CheatKit_CFLAGS = -fobjc-arc
+CheatManager_XCODE_SCHEME = CheatKit
 
-include $(THEOS_MAKE_PATH)/framework.mk
-
-after-clean::
-	if [ -d "packages" ]; then rm -rf packages; fi
-
+include $(THEOS_MAKE_PATH)/xcodeproj.mk
