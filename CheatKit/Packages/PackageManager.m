@@ -26,6 +26,10 @@
     return YES;
 }
 
+- (double)installedCheatVersion:(NSString *)cheatID {
+    return 0.1;
+}
+
 @end
 
 
