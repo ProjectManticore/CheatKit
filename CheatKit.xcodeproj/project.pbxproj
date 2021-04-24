@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		819805EF2634795500C52941 /* PackageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 819805EE2634795500C52941 /* PackageManager.m */; };
 		81E4222026315D4400BE96F9 /* CheatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E4221E26315D4400BE96F9 /* CheatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81EBA86226317DFA00C1F4FF /* PlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EBA86126317DFA00C1F4FF /* PlistParser.m */; };
 		81EBA86626317E3300C1F4FF /* PlistParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EBA86526317E0D00C1F4FF /* PlistParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		819805EE2634795500C52941 /* PackageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PackageManager.m; sourceTree = "<group>"; };
+		819805F12634796400C52941 /* PackageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PackageManager.h; sourceTree = "<group>"; };
 		81E4221B26315D4400BE96F9 /* CheatKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CheatKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E4221E26315D4400BE96F9 /* CheatKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheatKit.h; sourceTree = "<group>"; };
 		81E4221F26315D4400BE96F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +35,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		819805ED2634793100C52941 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				819805EE2634795500C52941 /* PackageManager.m */,
+				819805F12634796400C52941 /* PackageManager.h */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 		81E4221126315D4400BE96F9 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +64,7 @@
 		81E4221D26315D4400BE96F9 /* CheatKit */ = {
 			isa = PBXGroup;
 			children = (
+				819805ED2634793100C52941 /* Packages */,
 				81EBA86026317CF100C1F4FF /* FileTypes */,
 				81E4221E26315D4400BE96F9 /* CheatKit.h */,
 				81E4221F26315D4400BE96F9 /* Info.plist */,
@@ -148,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819805EF2634795500C52941 /* PackageManager.m in Sources */,
 				81EBA86226317DFA00C1F4FF /* PlistParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

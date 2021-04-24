@@ -16,3 +16,4 @@ FOUNDATION_EXPORT const unsigned char CheatKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <CheatKit/PublicHeader.h>
 
 #import <CheatKit/FileTypes/PlistParser.h>
+#import <CheatKit/Packages/PackageManager.h>
