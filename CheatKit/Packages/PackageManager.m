@@ -10,8 +10,20 @@
 
 @implementation PackageManager
 
+// Returns YES if the given Cheat is installed
 - (BOOL)isCheatInstalled:(NSString *)cheatID {
+    NSLog(@"Checking if Cheat is installed (ID: %@)", cheatID);
     return NO;
+}
+
+// Returns YES upon successfull removal
+- (BOOL)removeCheat:(NSString *)cheatID {
+    return YES;
+}
+
+// Returns YES upon successfull installation
+- (BOOL)installCheat:(NSString *)cheatID {
+    return YES;
 }
 
 @end
