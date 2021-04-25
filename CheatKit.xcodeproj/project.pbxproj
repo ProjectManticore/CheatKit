@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81277A0C2635A00600AFABDE /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81277A0B2635A00600AFABDE /* FileManager.m */; };
+		81277A0F2635A01000AFABDE /* FileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 81277A0E2635A01000AFABDE /* FileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		819805EF2634795500C52941 /* PackageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 819805EE2634795500C52941 /* PackageManager.m */; };
 		819805F726347BE000C52941 /* PackageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 819805F12634796400C52941 /* PackageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81E4222026315D4400BE96F9 /* CheatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E4221E26315D4400BE96F9 /* CheatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81277A0B2635A00600AFABDE /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		81277A0E2635A01000AFABDE /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
 		819805EE2634795500C52941 /* PackageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PackageManager.m; sourceTree = "<group>"; };
 		819805F12634796400C52941 /* PackageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PackageManager.h; sourceTree = "<group>"; };
 		81E4221B26315D4400BE96F9 /* CheatKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CheatKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,8 @@
 			children = (
 				819805EE2634795500C52941 /* PackageManager.m */,
 				819805F12634796400C52941 /* PackageManager.h */,
+				81277A0B2635A00600AFABDE /* FileManager.m */,
+				81277A0E2635A01000AFABDE /* FileManager.h */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -91,6 +97,7 @@
 			files = (
 				81EBA86626317E3300C1F4FF /* PlistParser.h in Headers */,
 				819805F726347BE000C52941 /* PackageManager.h in Headers */,
+				81277A0F2635A01000AFABDE /* FileManager.h in Headers */,
 				81E4222026315D4400BE96F9 /* CheatKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +172,7 @@
 			files = (
 				819805EF2634795500C52941 /* PackageManager.m in Sources */,
 				81EBA86226317DFA00C1F4FF /* PlistParser.m in Sources */,
+				81277A0C2635A00600AFABDE /* FileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

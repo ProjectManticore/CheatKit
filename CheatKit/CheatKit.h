@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char CheatKitVersionString[];
 
 #import <CheatKit/PlistParser.h>
 #import <CheatKit/PackageManager.h>
+#import <CheatKit/FileManager.h>
