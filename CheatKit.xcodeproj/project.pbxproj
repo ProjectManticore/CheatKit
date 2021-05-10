@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2317CBEC2649832E00CA776C /* libkrw_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 2317CBEA2649832E00CA776C /* libkrw_plugin.h */; };
+		2317CBED2649832E00CA776C /* libkrw.h in Headers */ = {isa = PBXBuildFile; fileRef = 2317CBEB2649832E00CA776C /* libkrw.h */; };
+		2317CBEF2649833500CA776C /* libkrw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2317CBEE2649833500CA776C /* libkrw.dylib */; platformFilter = ios; };
 		81277A0C2635A00600AFABDE /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81277A0B2635A00600AFABDE /* FileManager.m */; };
 		81277A0F2635A01000AFABDE /* FileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 81277A0E2635A01000AFABDE /* FileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		819805EF2634795500C52941 /* PackageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 819805EE2634795500C52941 /* PackageManager.m */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2317CBEA2649832E00CA776C /* libkrw_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libkrw_plugin.h; sourceTree = "<group>"; };
+		2317CBEB2649832E00CA776C /* libkrw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libkrw.h; sourceTree = "<group>"; };
+		2317CBEE2649833500CA776C /* libkrw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libkrw.dylib; sourceTree = "<group>"; };
 		81277A0B2635A00600AFABDE /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 		81277A0E2635A01000AFABDE /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
 		819805EE2634795500C52941 /* PackageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PackageManager.m; sourceTree = "<group>"; };
@@ -34,12 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2317CBEF2649833500CA776C /* libkrw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2317CBE82649831300CA776C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				2317CBEE2649833500CA776C /* libkrw.dylib */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		2317CBE92649831A00CA776C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2317CBEA2649832E00CA776C /* libkrw_plugin.h */,
+				2317CBEB2649832E00CA776C /* libkrw.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		819805ED2634793100C52941 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +78,8 @@
 		81E4221126315D4400BE96F9 = {
 			isa = PBXGroup;
 			children = (
+				2317CBE92649831A00CA776C /* include */,
+				2317CBE82649831300CA776C /* libs */,
 				81EBA85C2631799A00C1F4FF /* Makefile */,
 				81E4221D26315D4400BE96F9 /* CheatKit */,
 				81E4221C26315D4400BE96F9 /* Products */,
@@ -95,6 +121,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2317CBEC2649832E00CA776C /* libkrw_plugin.h in Headers */,
+				2317CBED2649832E00CA776C /* libkrw.h in Headers */,
 				81EBA86626317E3300C1F4FF /* PlistParser.h in Headers */,
 				819805F726347BE000C52941 /* PackageManager.h in Headers */,
 				81277A0F2635A01000AFABDE /* FileManager.h in Headers */,
@@ -307,6 +335,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
 				INFOPLIST_FILE = CheatKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -314,6 +343,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manticore.CheatKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -334,6 +367,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
 				INFOPLIST_FILE = CheatKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -341,6 +375,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manticore.CheatKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
