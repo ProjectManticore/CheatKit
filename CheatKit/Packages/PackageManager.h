@@ -5,9 +5,7 @@
 //  Created by Luca on 24.04.21.
 //
 
-#ifndef PackageManager_h
-#define PackageManager_h
-
+#pragma once
 
 @interface PackageManager : NSObject
 
@@ -17,5 +15,3 @@
 - (double)installedCheatVersion:(NSString *)cheatID;
 
 @end
-
-#endif /* PackageManager_h */

@@ -5,8 +5,7 @@
 //  Created by Luca on 25.04.21.
 //
 
-#ifndef FileManager_h
-#define FileManager_h
+#pragma once
 
 @interface FileManager : NSObject
 
@@ -14,7 +13,6 @@
 
 - (instancetype) init;
 - (BOOL)cheatManagerFSExists;
+- (BOOL)setupCheatManagerFS;
 
 @end
-
-#endif /* FileManager_h */
