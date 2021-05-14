@@ -5,8 +5,7 @@
 //  Created by Luca on 22.04.21.
 //
 
-#ifndef PlistParser_h
-#define PlistParser_h
+#pragma once
 
 #import <Foundation/Foundation.h>
 
@@ -15,5 +14,3 @@
 -(void)fromFile:(NSString *)pathToPlist;
 
 @end
-
-#endif /* PlistParser_h */
